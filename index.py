@@ -10,8 +10,8 @@ def home():
 
 @app.route('/about')
 def about():
-    return 'About my company'
+    return render_template('about.html')
 
 
 if __name__ == '__main__':
-    app.run()
+    app.run(debug=True)
